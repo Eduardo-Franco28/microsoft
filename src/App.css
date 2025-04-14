@@ -1,0 +1,142 @@
+body {
+  background-color: #f0f4f8;
+}
+
+.tudo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 100px;
+  height: 85vh;
+  background: linear-gradient(150deg, rgba(0, 0, 246, 0.271), rgba(0, 0, 246, 0.189), rgba(168, 168, 190, 0), rgba(168, 168, 190, 0));
+  margin: 80px 50px 0 50px;
+  border-radius: 20px;
+  flex-wrap: row;
+}
+
+h3 {
+  font-size: 2.5em;
+  font-family: "JetBrains Mono", monospace;
+}
+
+.participantes {
+  margin-bottom: 50px;
+  font-weight: 300;
+  font-size: 2em;
+  line-height: 50px;
+}
+
+.h3_linguagem {
+  margin-right: 0px;
+  font-size: 3.5em;
+  text-align: center;
+  margin-top: 100px;
+}
+
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.gp1 {
+  display: flex;
+  align-items: center;
+  margin: 20px 0px;
+}
+
+a {
+  margin: 15px;
+}
+
+.botoes {
+  padding-left: 30px;
+}
+
+.microsoft {
+  width: 700px;
+  height: auto;
+}
+
+
+/* ======================== */
+/* 💻 Notebook & Desktop padrão */
+/* ======================== */
+@media screen and (min-width: 769px) and (max-width: 1539px) {
+  .tudo {
+    flex-direction: column;
+    padding: 0px 60px;
+    height: 150vh;
+    background: linear-gradient(180deg, rgba(0, 0, 246, 0.271), rgba(0, 0, 246, 0.189), rgba(168, 168, 190, 0));
+  }
+  .participantes {
+    font-size: 2em;
+    margin-bottom: 40px;
+  }
+
+  .h3_linguagem {
+    font-size: 2em;
+    margin-top: 80px;
+  }
+
+  .microsoft {
+    width: 650px;
+    height: auto;
+  }
+
+  .botoes {
+    padding-left: 60px;
+  }
+  .participantes {
+    text-align: center;
+  }
+}
+
+/* ======================== */
+/* 📱 Mobile */
+/* ======================== */
+@media screen and (max-width: 768px) {
+  .tudo {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 30px 20px;
+    height: auto;
+    text-align: center;
+  }
+
+  .participantes {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    line-height: 1.4em;
+  }
+
+  .h3_linguagem {
+    font-size: 2em;
+    margin-top: 40px;
+  }
+
+  .microsoft {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .botoes {
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .gp1 {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  a {
+    margin: 5px;
+  }
+}
